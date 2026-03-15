@@ -15,7 +15,7 @@
     border: solid red;
     border-radius: 40px;
 
-    gap: 15px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -29,6 +29,7 @@
     #container p{
         color: white;
         margin-top: 10px;
+        line-height: 20px;
     }
 
     /*Barra de calculo*/
@@ -48,13 +49,12 @@
     border: none;
     }
 
-    #cacularBtn{
-       width: 80px;
-    height: 35px;
-    color: white;
-    background: rgba(7, 79, 187, 0.817);
+    #calcularBtn{
+    width: 80px;
+    height: 25px;
+    color: rgb(255, 0, 0);
+    background: rgba(255, 255, 255, 0.817);
 
-    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     backdrop-filter: blur(4px);
    -webkit-backdrop-filter: blur(4px);
@@ -62,11 +62,40 @@
     cursor: pointer;
     text-decoration: none;
     font-weight: 500;
-  transition: background 0.5s;
+  transition: background 0.1s;
     }
 
+    #calcularBtn:hover {
+    background: rgba(95, 93, 93, 0.35);
+    border: 1.5px solid #ffffff;
+      }
 /*Resultado calculo*/
     #saque
     {
         border: solid red;
+        color: white;
+        margin-top: 10px;
+      
+   
+        
+        width: 500px;
+        height: 600px;
+
+    }
+    
+    #saque h2{
+        color: white;
+        margin-top: 10px;
+        text-align: start;
+        padding: 3px;
+    }
+
+    #saque p{
+        color: white;
+
+        margin-top: auto;
+        text-align: right;
+
+        line-height: 20px;
+        padding: 3px;
     }
